@@ -1,4 +1,5 @@
 'use client';
+import Link from "next/link";
 import React, { useState } from 'react'
 import { Poppins } from 'next/font/google'
 
@@ -38,11 +39,13 @@ const AuthPage = (props: Props) => {
           <a href="#" className="text-sm text-black transition-all hover:underline">Forgot Password?</a>
         </div>
 
+      <Link href="/dashboard">
         <input
           type="button"
           value={isSignUp ? 'Sign Up' : 'Login'}
           className="mt-6 w-full bg-black text-white font-semibold py-3 rounded-xl cursor-pointer hover:bg-black/90 transition-all"
         />
+        </Link>
 
         <div className="mt-4 text-center text-sm sm:text-md">
           {isSignUp ? (

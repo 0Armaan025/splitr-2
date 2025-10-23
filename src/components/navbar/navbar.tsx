@@ -8,26 +8,19 @@ const poppinsFont = Poppins({
 });
 
 const NAV_LINKS = [
+    
     {
-        name: "Blogs",
-        link: "/blogs",
-
+        name: "Pricing",
+        link: "/#pricing",
     },
-    {
-        name: "pricing",
-        link: "/pricing",
-    },
-    {
-        name: "Docs",
-        link: "/docs",
-    },
+    
     {
         name: "About us",
         link: "/about-us",
     }, 
     {
         name: "Contact us",
-        link: "/contact"
+        link: "mailto:armaan33000@gmail.co?subject=Inquiry&body=Hello,%20I%20would%20like%20to%20know%20more..."
     }
 ];
 

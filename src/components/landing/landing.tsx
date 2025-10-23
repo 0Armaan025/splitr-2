@@ -1,4 +1,5 @@
 import { Poppins } from "next/font/google";
+import Link from "next/link";
 import React from "react";
 
 type Props = {};
@@ -38,6 +39,7 @@ const LandingContent = (props: Props) => {
 
       {/* Buttons */}
       <div className="buttons-div flex flex-col sm:flex-row justify-center items-center mt-12 gap-4">
+        <Link href="/auth">
         <button
           className="bg-white text-black border-4 border-black rounded-xl px-8 py-3 font-semibold shadow-[4px_4px_0_rgba(0,0,0,1)] 
           hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0_rgba(0,0,0,1)] 
@@ -45,6 +47,7 @@ const LandingContent = (props: Props) => {
         >
           Get Started
         </button>
+        </Link>
 
         <button
           className="bg-yellow-300 text-black border-4 border-black rounded-xl px-8 py-3 font-semibold shadow-[4px_4px_0_rgba(0,0,0,1)] 

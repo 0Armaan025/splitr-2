@@ -54,7 +54,7 @@ export const LeftSideBar: React.FC = () => {
           } shadow-[6px_6px_0_rgba(0,0,0,1)]`}
         >
           <div className="flex items-center justify-between mb-6">
-            <h3 className="text-2xl font-bold">Dashboard</h3>
+            <Link href="/"><h3 className="text-2xl font-bold">Splitr</h3></Link>
             <button
               aria-label="Close menu"
               className="p-1 border-2 border-black rounded-sm focus:outline-none"
@@ -91,7 +91,7 @@ export const LeftSideBar: React.FC = () => {
 
       {/* Desktop sidebar */}
       <aside className="hidden md:block w-72 h-screen sticky top-0 left-0 p-6 border-4 border-black bg-white shadow-[6px_6px_0_rgba(0,0,0,1)]">
-        <h3 className="text-2xl font-bold mb-6">Dashboard</h3>
+        <Link href="/"><h3 className="text-2xl font-bold mb-6">Splitr</h3></Link>
 
         <nav className="flex flex-col gap-3" aria-label="Sidebar">
           {LEFT_SIDE_BAR_ITEMS.map((item) => {
