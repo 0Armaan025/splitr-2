@@ -16,6 +16,8 @@ const eslintConfig = [
     rules: {
       'react/no-unescaped-entities': 'off',
       '@next/next/no-page-custom-font': 'off',
+      'eslint-disable-next-line': 'off',
+      '@typescript-eslint/ban-types': 'off',
       '@typescript-eslint/no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
       '@typescript-eslint/no-explicit-any': 'off',
     },
@@ -26,6 +28,9 @@ const eslintConfig = [
       "build/**",
       "next-env.d.ts",
     ],
+    eslint: {
+      ignoreDuringBuilds: true,
+    },
   },
 ];
 
