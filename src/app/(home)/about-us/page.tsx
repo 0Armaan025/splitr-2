@@ -58,13 +58,13 @@ const AboutUsPage = () => {
   const team = [
     {
       name: 'Armaan',
-      role: 'Co-Founder',
+      role: 'Founder',
       region: 'North Region',
       
     },
     {
       name: 'Arnav Bajaj',
-      role: 'Co-Founder',
+      role: 'Founder',
       region: 'North Region',
       
     },
